@@ -1,0 +1,14 @@
+{
+  "required": false,
+  "package": "com.haejin.gaurdingcompat.compat.guarding.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "com.haejin.gaurdingcompat.compat.guarding.mixin.GuardingCompatMixinPlugin",
+  "mixins": [
+    "PlayerParryFlagMixin",
+    "ShieldUtilsParryMixin",
+    "DisableShieldCompatMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,37 +1,21 @@
 {
-	"schemaVersion": 1,
-	"id": "tutorial",
-	"version": "${version}",
-	"name": "Tutorial",
-	"description": "Tutorial RPG Mod by Haejin",
-	"authors": [
-		"Haejin!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "MIT",
-	"icon": "assets/tutorial/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.haejin.tutorial.Tutorial"
-		],
-		"fabric-datagen": [
-			"net.haejin.tutorial.TutorialDataGenerator"
-		],
-		"client": [
-			"net.haejin.tutorial.TutorialClient"
-		]
-	},
-	"mixins": [
-		"tutorial.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.18.4",
-		"minecraft": "~1.21.1",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "guarding_compat",
+  "version": "1.0.0",
+  "name": "Guarding Compat",
+  "description": "Removes shield cooldown when a parry is successfully performed via the Guarding mod.",
+  "authors": ["haejin"],
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.haejin.gaurdingcompat.GuardingCompat"]
+  },
+  "mixins": ["guarding_compat.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  },
+  "suggests": {
+    "guarding": "*"
+  }
 }
